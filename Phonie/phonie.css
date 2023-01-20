@@ -1,0 +1,246 @@
+body {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+form {
+  background: white;
+  padding: 3em;
+  /* height: 320px; */
+  border-radius: 10px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+/* form div i{
+  position: absolute;
+  padding: 10px;
+}
+.failure-icon,
+.error{
+  color: red;
+}
+
+.success-icon{
+  color: green
+}
+  .error{
+    font-size: 14.5px;
+    margin-top: 5px;
+  } */
+p {
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  font-size: 12px;
+}
+a:hover {
+  text-shadow: 2px 2px 6px #00000040;
+}
+
+a:active {
+  text-shadow: none;
+}
+
+input {
+  background: transparent;
+  width: 200px;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+input:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+input[type="lastname"]:focus,
+input[type="phoneNumber"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="button"] {
+  margin-top: 10px;
+  width: 150px;
+  font-size: 1rem;
+}
+input:hover {
+  cursor: pointer;
+}
+
+input:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+input:hover {
+  margin: 4px;
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  /* color: #fff; */
+  /* text-shadow: 2px 2px 4px rgba(0,0,0,0.4); */
+}
+
+.drop {
+  background: white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transition: all 0.2s ease;
+}
+.drop1 {
+  height: 80px;
+  width: 80px;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+}
+
+.drop2 {
+  height: 80px;
+  width: 80px;
+  bottom: -30px;
+  right: -10px;
+}
+
+.drop3 {
+  height: 100px;
+  width: 100px;
+  bottom: 120px;
+  right: -50px;
+  z-index: -1;
+}
+
+.drop4 {
+  height: 120px;
+  width: 120px;
+  top: -60px;
+  right: -60px;
+}
+
+.drop5 {
+  height: 60px;
+  width: 60px;
+  bottom: 170px;
+  left: 90px;
+  z-index: -1;
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #f2796e;
+  width: 55%;
+  min-height: 10vh;
+  border-radius: 5px;
+  /* padding-left: 100px; */
+ 
+}
+
+form {
+  padding-left: 100px;
+  width: 40%;
+  max-width: none;
+}
+/* .text{
+  text-align:center;
+  color: white;
+  font-size: large;
+} */
+.image {
+  background-image: url(https://svgshare.com/i/_gZ.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 510px;
+  height: 580px;
+  position: absolute;
+  bottom: -22px;
+  /* right: 800; */
+  
+  margin-right: 336px;
+
+  /* margin-top: 700px; */
+}
+
+#images {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  padding-right: 30px;
+  margin-top: 250px;
+  margin-right: 180px;
+  border: 2px black;
+  display: block;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+  form,
+  .drops {
+    width: 100%;
+  }
+}

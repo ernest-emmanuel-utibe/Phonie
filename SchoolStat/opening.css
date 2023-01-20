@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(./images/waves.jpg); */
+    background-image: url(./images/flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%
+}
+
+.background{
+    /* flex-direction: column; */
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    height: 100vh;
+}
+
+.background_2 {
+    flex: 1;
+    padding-top: 250px;
+    margin-left: 50px;
+    border-radius: 100%;
+    
+    /* list-style-type: none; */
+}
+
+.background_3 {
+    display: inline-block;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    /* margin-left: 800px; */
+}
+.background_3 > div {
+    background-image: url(./images/board.jpg);
+    border: 2px solid #fff;
+    padding: 200px;
+    border-radius: 10%;
+    padding-top: 50px;
+    font-size: large;
+    color: white;
+}
+
+.background_4 {
+    /* display: flex; */
+    flex: 1;
+    /* margin-right: 200px; */
+}
+.background_4 img {
+    width: 100%;
+}
+
+span {
+    color: rgba(0, 26, 255, 0.945);
+    font-style:normal;
+}
+
+.click {
+    width: 80px;
+    background-color: rgba(130, 139, 0, 0.712);
+    list-style-type: none;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.click:active {
+    transform: translateY(-10px);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+#div3 {
+    background-color: blue;
+}
+
+.t-3{
+   padding-bottom: 100px; 
+}
